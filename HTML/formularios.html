@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios</title>
+</head>
+<body>
+    <h1>Formularios</h1>
+    <form action="" method="" enctype="">
+
+        <fieldset>
+            <legend>Informacion personal:</legend>
+            <label for="nombre">Nombre: </label>
+            <input type="text" name="nombre" id="nombre" placeholder="nombre...">
+            <label for="apellido">Apellido: </label>
+            <input type="text" name="apellido" id="apellido" placeholder="apellido...">
+            <label for="email">email: </label>
+            <input type="email" name="email" id="email" placeholder="email...">
+            <label for="genero">genero: </label>
+            <input type="radio" name="genero" id="hombre" value="hombre">
+            <label for="hombre">hombre</label>
+            <input type="radio" name="genero" id="mujer" value="mujer">
+            <label for="mujer">mujer</label>
+            <label for="tipo">Tipo documento: </label>
+            <select name="tipo_documento" id="tipo_documento" >
+                <option value="cedula" >cedula</option>
+                <option value="pasaporte">pasaporte</option>
+            </select>
+            <label for="mayor">
+                <input type="checkbox" id="mayor" name="mayor">Mayor de edad
+            </label>
+            <label for="menor">
+                <input type="checkbox" id="menor" name="menor">Menor de edad
+            </label>
+            <label for="color">color preferido:</label>
+            <input type="color" name="color">
+            <label for="fecha">fecha de un buen recuerdo:</label>
+            <input type="date" name="fecha">
+            <label for="archivos">archivos</label>
+            <input type="file" name="archivos">
+            <div>
+                Numero:
+                <input type="number">
+            </div>
+            <div>
+                Rango:
+                <input type="range" name="rango">
+            </div>
+            <div>
+                Barra de progreso:
+                <progress min="1" max="5" value="2"></progress>
+            </div>
+            <div>
+                DataList:
+                <input list="frutas" name="frutas">
+                <datalist id="frutas">
+                    <option value="manzana"></option>
+                    <option value="naranja"></option>
+                </datalist>
+            </div>
+        </fieldset>
+        
+        <p>
+            <label for="descripcion">Descripcion: </label>
+            <textarea name="descripcion" id="descripcion" cols="30" rows="10"></textarea>
+        </p>
+        
+        <button type="submit">enviar datos con etiqueta button</button>
+        <input type="submit" value="enviar con input">
+        <input type="reset" value="Limpiar formulario">
+    </form>
+
+    <h1>validacion de formularios</h1>
+
+    <form action="">
+        <input type="text" required minlength="5" maxlength="15" placeholder="text" pattern="[A-Za-z]">
+
+        <input type="number" required min="5" max="15" placeholder="number">
+
+        <input type="submit" value="enviar">
+    </form>
+</body>
+</html>
