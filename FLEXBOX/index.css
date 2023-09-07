@@ -1,0 +1,117 @@
+section{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    margin: 0 auto;
+    display: flex;
+}
+
+.caja1{
+    background: blue;
+}
+
+.caja2{
+    background: blueviolet;
+}
+
+.regla2{
+    flex-direction: column;
+}
+.caja3{
+    background: blue;
+}
+
+.caja4{
+    background: blueviolet;
+}
+.caja5{
+    background: greenyellow;
+}
+
+.regla3{
+    flex-direction: row-reverse;
+}
+
+.caja6{
+    background: blue;
+}
+
+.caja7{
+    background: blueviolet;
+}
+
+.regla4{
+    /* padding: 20px; */
+    flex-wrap: wrap;
+}
+
+.caja8{
+    background: blue;
+}
+
+.caja9{
+    background: blueviolet;
+}
+
+.regla5{
+    justify-content: space-around;
+}
+
+.caja10{
+    background: blue;
+}
+
+.caja11{
+    background: blueviolet;
+}
+.regla6{
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.caja12{
+    background: blue;
+}
+
+.caja13{
+    background: blueviolet;
+}
+.regla7{
+   justify-content: center; 
+  
+}
+
+.caja14{
+    background: blue;
+    align-self: end;
+}
+
+.caja15{
+    background: blueviolet;
+}
+.regla8{
+    float: left;
+   
+ }
+ 
+ .caja16{
+     background: blue;
+     
+ }
+ 
+ .caja17{
+     background: blueviolet;
+ }
+ .regla9{
+    
+   
+ }
+ 
+ .caja18{
+     background: blue;
+     
+ }
+ 
+ .caja19{
+     background: blueviolet;
+ }

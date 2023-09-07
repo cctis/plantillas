@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+    <h3>Regla 1: Flexbox necesita un padre y por lo menos un hijo</h3>
+         
+            <section class="regla1">
+                <article class="caja1">caja1</article>
+                <article class="caja2">caja2</article>
+            </section>
+
+    <p>la altura con displey flex depende del tamaño del padre y la anchura del contenido del hijo </p>
+    
+    <hr>
+    
+    <h3>Regla 2: El flex container tiene dos ejes</h3>
+         
+            <section class="regla2">
+                <article class="caja3">caja3</article>
+                <article class="caja4">caja4</article>
+                <article class="caja5">caja5</article>
+            </section>
+
+    <p>el eje principal: por defecto es horizontal *los hijos se ubican uno al lado del otro, y el eje secundario: por defecto es vertical *los hijos son del tamaño del ancho del padre(como regla 1)</p>
+    <p>para *invertir los ejes flexdireccion column como en este ejemplo</p>
+
+    <hr>
+
+    <h3>Regla 3: Podemos modificar el eje principal con la propiedad flexdireccion</h3>
+         
+    <section class="regla3">
+        <article class="caja6">caja6</article>
+        <article class="caja7">caja7</article>
+    </section>
+
+    <p>este ejemplo es con flexdireccion row reverse *por defecto horizontal pero reverse </p>
+
+    <hr>
+
+    <h3>Regla 4: Podemos permitir el salto de columnas con flexwrap</h3>
+         
+    <section class="regla4">
+        <article class="caja8">caja8</article>
+        <article class="caja9">caja9</article>
+        <article class="caja8">caja8</article>
+        <article class="caja9">caja9</article>
+        <article class="caja8">caja8</article>
+        <article class="caja9">caja9</article>
+        <article class="caja8">caja8</article>
+        <article class="caja9">caja9</article>
+    </section>
+
+    <p>acomoda los hijos dentro del contenedor padre, o si asi se requiere los hijos pueden salirse del padre con no-wrap</p>
+
+    <hr>
+    <h3>Regla 5: alineamos elementos en el eje principal con justify-content</h3>
+         
+    <section class="regla5">
+        <article class="caja10">caja10</article>
+        <article class="caja11">caja11</article>
+        
+    </section>
+
+    <p>con esta propiedad manejamos los espacios que hay entre los hijos *por defecto viene con flex-start, alineando basado en el eje principal</p>
+
+    <hr>
+    <h3>Regla 6: alineamos elementos en el eje secundario con align-items</h3>
+         
+    <section class="regla6">
+        <article class="caja12">caja12</article>
+        <article class="caja13">caja13</article>
+        
+    </section>
+
+    <p>por defecto el eje secundario es vertical de arriba hacia abajo , se puede controlar el comportamiento de los hijos con align-items por defecto es stretch</p>
+
+    <hr>
+    <h3>Regla 7: podemos alinear los elementos hijos de forma individual en el eje secundario con align-self</h3>
+         
+    <section class="regla7">
+        <article class="caja14">caja14</article>
+        <article class="caja15">caja15</article>
+        
+    </section>
+
+  
+    <hr>
+    <h3>Regla 8: los hijos flexibles ignoran propiedades como float,clear,vertical-align</h3>
+         
+    <section class="regla8">
+        <article class="caja16">caja16</article>
+        <article class="caja17">caja17</article>
+        
+    </section>
+
+    <p>al usar display flex esas propiedades son ignoradas para los hijos, pero si aplica al padre</p>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+
+    <h3>Regla 9: </h3>
+         
+    <section class="regla9">
+        <article class="caja18">caja16</article>
+        <article class="caja19">caja17</article>
+        
+    </section>
+
+    <p></p>
+
+    <hr>
+</body>
+</html>
